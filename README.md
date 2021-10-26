@@ -2,12 +2,17 @@
 
 Authors: Ting-Chen Chen, Man-Kong (Peter) Yau and Daniel J. Kirshbaum
 
+Department of Atmospheric and Oceanic Sciences, McGill University 
+
+Montreal, Canada
+
 Submitted to Journal of Atmospheric Sciences
 
-This repository contains all the required modification of the source codes in the WRF(v4.1.5) 
-for implementing a parameterization of slantwise covnection (SC). Such SC scheme is developed in 
-the Department of Atmospheric and Oceanic Scieneces at McGill University. The main program of 
-SC scheme is "module_cu_slantwise.F" under the folder "phys."
+This repository contains all the required modification of the source codes in the WRF(v4.1.5) for implementing a parameterization of slantwise convection (SC). Physically, this SC scheme operates in locally-defined 2D cross-sections perpendicular to the deep-layer-averaged thermal winds. Its central concept is to remove positive slantwise convective available potential energy (SCAPE) by adjusting the momentum field to render the environment toward slantwise neutrality given a prescribed adjustment timescale (3-5 hours). Condensational heating and moisture loss associated with the upward motion are also parameterized. We implement the scheme in the Weather Research and Forecasting (WRF) model to supplement the existing cumulus parameterization scheme (CPS) for upright convection.
+
+The main program of SC scheme is named "module_cu_slantwise.F" under the folder "phys." 
+
+Note that this scheme has been coded successfully for OpenMP, and the test results show similar scaling performance as runs using only the Kain-Fritsch CPS. The implementation for MPI is not available at the moment.
 
 To download and use this scheme, please cite 
 
