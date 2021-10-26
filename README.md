@@ -16,6 +16,9 @@ Note that this scheme has been coded successfully for OpenMP, and the test resul
 
 To download and use this scheme, please cite 
 
+https://doi.org/10.5281/zenodo.5602111
+
 Chen, T.-C., M. K. Yau, and D. J. Kirshbaum, 2021: A parameterization of slantwise convection in the WRF model. Submitted to J. Atmos. Sci.
+
 
 *The Advanced Research WRF model can be downloaded from https://www2.mmm.ucar.edu/wrf/users/download/get_sources.html (last access: April 2020).
