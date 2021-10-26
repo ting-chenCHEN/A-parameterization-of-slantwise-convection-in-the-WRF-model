@@ -1,6 +1,7 @@
 # A-parameterization-of-slantwise-convection-in-the-WRF-model
 
 Authors: Ting-Chen Chen, Man-Kong (Peter) Yau and Daniel J. Kirshbaum
+
 Submitted to Journal of Atmospheric Sciences
 
 This repository contains all the required modification of the source codes in the WRF(v4.1.5) 
