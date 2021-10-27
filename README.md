@@ -15,7 +15,7 @@ To activate the SC scheme in the simulation, add a variable "slcu_physics = 1" i
 within the &physics namelist record, e.g.,
  
  &physics   
- physics_suite                       = 'CONUS' 
+ physics_suite                       = 'CONUS'      
  mp_physics                          = -1,    
  cu_physics                          =  1,   
  slcu_physics                        =  1,    
