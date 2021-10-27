@@ -11,7 +11,8 @@ Submitted to Journal of Atmospheric Sciences
 This repository contains all the required modification of the source codes in the Weather Research and Forecasting (WRF) model (v4.1.5) for implementing a parameterization of slantwise convection (SC) developed by the present authors following a PhD work of L. Ma (2000). Physically, this SC scheme operates in locally-defined 2D cross-sections perpendicular to the deep-layer-averaged thermal winds. Its central concept is to eliminate positive slantwise convective available potential energy (SCAPE) by adjusting the momentum field. The environment is adjusted toward slantwise neutrality given a prescribed adjustment timescale (3-5 hours). Condensational heating and moisture loss associated with the upward motion are also parameterized. This scheme is a supplement to the existing cumulus parameterization scheme (CPS) for upright convection.
 
 The main program of the SC scheme is named "module_cu_slantwise.F" under the folder "phys." 
-To activate the SC scheme in the simulation, add a variable "slcu_physics = 1" in the namelist.input 
+
+To switch on the SC scheme in the simulation, add a variable "slcu_physics = 1" in the namelist.input 
 within the &physics namelist record, e.g.,
  
  &physics   
